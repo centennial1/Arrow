@@ -1,0 +1,38 @@
+<%- include ('../partials/header') %>
+
+    <!-- MAIN CONTENT -->
+     <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <h1><%= title %></h1>
+            <form class="form" method="post">
+              <div class="form-group">
+                <label for="NameTextField">Survey Title</label>
+                <input type="text" class="form-control" id=""
+                placeholder="" name="title" value="<%= surveys.Title %>" required>
+              </div>
+              <div class="form-group">
+                <label for="AuthorTextField">Author</label>
+                <input type="text" class="form-control" id="AuthorTextField"
+                placeholder="" name="author" value="<%= surveys.Author %>"  required>
+              </div>
+              <div class="form-group">
+                <label for="StartDateTextField">Start Date</label>
+                <input type="text" class="form-control" id="StartDateTextField"
+                placeholder="" name="startDate" value="<%= surveys.StartDate %>"  required>
+              </div>
+              <div class="form-group">
+                <label for="EndDateTextField">End Date</label>
+                <input type="text" class="form-control" id="EndDateTextField"
+                placeholder="" name="endDate" value="<%= surveys.EndDate %>"  required>
+              </div>
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/surveys" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+      </div>
+    </div>
+
+
+<%- include ('../partials/footer') %>

@@ -1,0 +1,63 @@
+ 
+<%- include ('../partials/header') %> 
+
+{<!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-20">
+          <h1>Survey List </h1>
+          <br><br><br><br> 
+          <a href="/surveys/add" id="create_btn"><i class="fa fa-plus"></i> Create Survey</a>
+          <br><br>
+          
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Survey Title</th>
+                  <th class="text-center">Author</th>
+                  <th class="text-center">Start date</th>
+                  <th class="text-center">End date</th>
+                  <th class="text-center">Responses</th>
+                  <th class="text-center"> </th> 
+                  <th class="text-center"> </th> 
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Template Row -->
+                <% for (let count = 0; count < surveys.length; count++) { %>
+                <tr>
+                  <td><%= surveys[count].Title %></td>
+                  <td class="text-center"><%= surveys[count].Author %></td>
+                  <td class="text-center"><%= surveys[count].StartDate %></td>
+                  <td class="text-center"><%= surveys[count].EndDate %></td>
+                  <td class="text-center">0</td>
+                
+
+                  <td class="text-center">
+                    <a href="/surveys/<%= surveys[count]._id %>" id="btns2"> Edit</a> 
+ 
+                    <a href="/surveys/delete/<%= surveys[count]._id %>" id="btns2"> Delete</a>
+                  </td>
+                    <td class="text-center">
+                      <a href="" id="btns"> Start Survey</a>
+                    
+                  </td>
+                </tr>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+           <div class="col-md-offset-1 col-md-10 text-center">
+            <ul class="pagination pagination-lg pager" id="myPager"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+ }
+    <%- include ('../partials/footer') %> 
+
+
+
+
+    

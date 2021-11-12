@@ -1,0 +1,46 @@
+{
+  "name": "teamarrow",
+  "version": "1.0.0",
+  "description": "Team 1 project",
+  "main": "server.js",
+  "scripts": {
+    "test": "yeha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELLAERA/TEAMARROW.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS"
+  ],
+  "author": "Team 1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ELLAERA/TEAMARROW/issues"
+  },
+  "homepage": "https://github.com/ELLAERA/TEAMARROW#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "font-awesome": "^4.7.0",
+    "http-errors": "^1.8.0",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
+    "popper.js": "^1.16.1"
+  },
+  "engines": {
+    "node": "^10.15.0",
+    "npm": "^6.0.0"
+  }
+}
